@@ -113,7 +113,7 @@ async function initDataBlogMenu() {
        else
 {
         response = await fetch(
-           `https://switch-coder.github.io/${siteConfig.repositoryName}/data/local_blogMenu.json`
+           `https://misosul.github.io/${siteConfig.repositoryName}/data/local_blogMenu.json`
         );
         blogMenu = await response.json();
 
