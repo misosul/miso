@@ -73,8 +73,9 @@ style 폴더안에 style.css 파일을 열어주세요.
 # 글자 색 변경
 
 ```
-<span style="color:색상코드입력">원하는 글 작성</span>
+<span style="color:색상코드입력">원하는 글 작성</span> 
 ```
+*html컬러차트 cmyk to hex 코드로 
 
 # 이미지 설명
 
