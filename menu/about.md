@@ -16,6 +16,14 @@
 실제로 완전히 영구적인 가치를 지닌 것이 있냐고 하면 솔직히 있는지 없는지 모르겠지만, 우리 삶이 100세라고 넉넉잡아 봤을 때 그 시간의 절반 정도만 지킬 수 있어도 썩 좋은 퀄리티의 클래식이라고 생각한다. 반짝하는 것을 만들어내기는 상대적으로 쉽다. 하지만 시간이 지나도 가치가 있는 것은 꽤 많은 고려가 필요하다. 당장 사람들이 알아주지 않는 것에도 나름의 신념을 가지고 신경 쓴 제품이라면 시간의 흐름에도 가치를 지키는데 도움을 준다.
 <br>
 
+<video controls>
+  <source src="https://drive.google.com/uc?export=download&id=18xxyOnEWpTeaSMzXND8t2y1g0xrPvTdm" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
+![alt text](https://drive.google.com/thumbnail?id=1TPBUrOf7G_OJZIm08TqIpJxvhjs8nu7G&sz=w1000)
+
 <div class="slider h-[600px]">
 
 ![alt text](https://picsum.photos/id/1015/600/400)

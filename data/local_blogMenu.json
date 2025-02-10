@@ -5,6 +5,60 @@
     "download_url": "/menu/about.md"
   },
   {
+    "type": "dir",
+    "name": "branding portfolio",
+    "children": [
+      {
+        "type": "file",
+        "name": "[20240119]_[finstitch]_[finstitch]_[fin logo]_[gg]_[].md",
+        "download_url": "/menu/branding portfolio/[20240119]_[finstitch]_[finstitch]_[fin logo]_[gg]_[].md",
+        "folder": "branding portfolio/"
+      },
+      {
+        "type": "file",
+        "name": "[20240119]_[육서담]_[finstitch]_[fin logo]_[gg]_[]",
+        "download_url": "/menu/branding portfolio/[20240119]_[육서담]_[finstitch]_[fin logo]_[gg]_[]",
+        "folder": "branding portfolio/"
+      },
+      {
+        "type": "file",
+        "name": "[20240120]_[ji studio]_[ji studio]_[]_[1]_[1].md",
+        "download_url": "/menu/branding portfolio/[20240120]_[ji studio]_[ji studio]_[]_[1]_[1].md",
+        "folder": "branding portfolio/"
+      },
+      {
+        "type": "file",
+        "name": "[20240120]_[부여제철소]_[부여제철소]_[]_[1]_[1].md",
+        "download_url": "/menu/branding portfolio/[20240120]_[부여제철소]_[부여제철소]_[]_[1]_[1].md",
+        "folder": "branding portfolio/"
+      },
+      {
+        "type": "file",
+        "name": "[20240505]_[블로그 글 양식]_[markdown]_[test_1.jpg]_[마크다운 양식입니다. 참고하여 블로그 글을 작성해주세요. 각 언어별 하이라이팅도 지원합니다.]_[].md",
+        "download_url": "/menu/branding portfolio/[20240505]_[블로그 글 양식]_[markdown]_[test_1.jpg]_[마크다운 양식입니다. 참고하여 블로그 글을 작성해주세요. 각 언어별 하이라이팅도 지원합니다.]_[].md",
+        "folder": "branding portfolio/"
+      },
+      {
+        "type": "file",
+        "name": "[20250210]_[lebois]_[]_[]_[]_[]_.md",
+        "download_url": "/menu/branding portfolio/[20250210]_[lebois]_[]_[]_[]_[]_.md",
+        "folder": "branding portfolio/"
+      },
+      {
+        "type": "file",
+        "name": "[20250210]_[팜젤라또]_[팜젤라또]_[팜젤로고.png]_[description]_[author].md",
+        "download_url": "/menu/branding portfolio/[20250210]_[팜젤라또]_[팜젤라또]_[팜젤로고.png]_[description]_[author].md",
+        "folder": "branding portfolio/"
+      }
+    ],
+    "download_url": "/menu/branding portfolio"
+  },
+  {
+    "type": "file",
+    "name": "branding process.md",
+    "download_url": "/menu/branding process.md"
+  },
+  {
     "type": "file",
     "name": "contact.md",
     "download_url": "/menu/contact.md"
@@ -15,62 +69,29 @@
     "children": [
       {
         "type": "file",
-        "name": "[20240119]_[썸네일이 없는 테스트 파일]_[MUSIC]_[]_[이 파일은 테스트 파일입니다.]_[].md",
-        "download_url": "/menu/[20240119]_[썸네일이 없는 테스트 파일]_[MUSIC]_[]_[이 파일은 테스트 파일입니다.]_[].md"
+        "name": "[20240119]_[buyeo tapas bar]_[]_[이 파일은 테스트 파일입니다.]_[].md",
+        "download_url": "/menu/projects/[20240119]_[buyeo tapas bar]_[]_[이 파일은 테스트 파일입니다.]_[].md",
+        "folder": "projects/"
       },
       {
         "type": "file",
-        "name": "[20240120]_[썸네일이 없는 테스트 파일]_[ASSAY]_[]_[이 파일은 테스트 파일입니다.]_[].md",
-        "download_url": "/menu/[20240120]_[썸네일이 없는 테스트 파일]_[ASSAY]_[]_[이 파일은 테스트 파일입니다.]_[].md"
-      },
-      {
-        "type": "file",
-        "name": "[20240121]_[썸네일이 없는 테스트 파일]_[DESIGN]_[]_[이 파일은 테스트 파일입니다.]_[].md",
-        "download_url": "/menu/[20240121]_[썸네일이 없는 테스트 파일]_[DESIGN]_[]_[이 파일은 테스트 파일입니다.]_[].md"
+        "name": "[20240120]_[documentary film]_[film]_[]_[]_[].md",
+        "download_url": "/menu/projects/[20240120]_[documentary film]_[film]_[]_[]_[].md",
+        "folder": "projects/"
       },
       {
         "type": "file",
         "name": "[20240505]_[블로그 글 양식]_[markdown]_[test_1.jpg]_[마크다운 양식입니다. 참고하여 블로그 글을 작성해주세요. 각 언어별 하이라이팅도 지원합니다.]_[].md",
-        "download_url": "/menu/[20240505]_[블로그 글 양식]_[markdown]_[test_1.jpg]_[마크다운 양식입니다. 참고하여 블로그 글을 작성해주세요. 각 언어별 하이라이팅도 지원합니다.]_[].md"
+        "download_url": "/menu/projects/[20240505]_[블로그 글 양식]_[markdown]_[test_1.jpg]_[마크다운 양식입니다. 참고하여 블로그 글을 작성해주세요. 각 언어별 하이라이팅도 지원합니다.]_[].md",
+        "folder": "projects/"
       },
       {
         "type": "file",
         "name": "[date]_[title]_[category]_[thumnail]_[description]_[author].md",
-        "download_url": "/menu/[date]_[title]_[category]_[thumnail]_[description]_[author].md"
+        "download_url": "/menu/projects/[date]_[title]_[category]_[thumnail]_[description]_[author].md",
+        "folder": "projects/"
       }
     ],
     "download_url": "/menu/projects"
-  },
-  {
-    "type": "dir",
-    "name": "portfoilo",
-    "children": [
-      {
-        "type": "file",
-        "name": "[20240119]_[썸네일이 없는 테스트 파일]_[MUSIC]_[]_[이 파일은 테스트 파일입니다.]_[].md",
-        "download_url": "/menu/[20240119]_[썸네일이 없는 테스트 파일]_[MUSIC]_[]_[이 파일은 테스트 파일입니다.]_[].md"
-      },
-      {
-        "type": "file",
-        "name": "[20240120]_[썸네일이 없는 테스트 파일]_[ASSAY]_[]_[이 파일은 테스트 파일입니다.]_[].md",
-        "download_url": "/menu/[20240120]_[썸네일이 없는 테스트 파일]_[ASSAY]_[]_[이 파일은 테스트 파일입니다.]_[].md"
-      },
-      {
-        "type": "file",
-        "name": "[20240121]_[썸네일이 없는 테스트 파일]_[DESIGN]_[]_[이 파일은 테스트 파일입니다.]_[].md",
-        "download_url": "/menu/[20240121]_[썸네일이 없는 테스트 파일]_[DESIGN]_[]_[이 파일은 테스트 파일입니다.]_[].md"
-      },
-      {
-        "type": "file",
-        "name": "[20240505]_[블로그 글 양식]_[markdown]_[test_1.jpg]_[마크다운 양식입니다. 참고하여 블로그 글을 작성해주세요. 각 언어별 하이라이팅도 지원합니다.]_[].md",
-        "download_url": "/menu/[20240505]_[블로그 글 양식]_[markdown]_[test_1.jpg]_[마크다운 양식입니다. 참고하여 블로그 글을 작성해주세요. 각 언어별 하이라이팅도 지원합니다.]_[].md"
-      },
-      {
-        "type": "file",
-        "name": "[date]_[title]_[category]_[thumnail]_[description]_[author].md",
-        "download_url": "/menu/[date]_[title]_[category]_[thumnail]_[description]_[author].md"
-      }
-    ],
-    "download_url": "/menu/portfoilo"
   }
 ]
