@@ -10,20 +10,14 @@
     "children": [
       {
         "type": "file",
-        "name": "[20240119]_[finstitch]_[finstitch]_[fin logo]_[gg]_[].md",
-        "download_url": "/menu/branding portfolio/[20240119]_[finstitch]_[finstitch]_[fin logo]_[gg]_[].md",
+        "name": "[20240119]_[finstitch]_[finstitch]_[fin logo.JPG]_[gg]_[].md",
+        "download_url": "/menu/branding portfolio/[20240119]_[finstitch]_[finstitch]_[fin logo.JPG]_[gg]_[].md",
         "folder": "branding portfolio/"
       },
       {
         "type": "file",
-        "name": "[20240119]_[육서담]_[finstitch]_[fin logo]_[gg]_[]",
-        "download_url": "/menu/branding portfolio/[20240119]_[육서담]_[finstitch]_[fin logo]_[gg]_[]",
-        "folder": "branding portfolio/"
-      },
-      {
-        "type": "file",
-        "name": "[20240120]_[ji studio]_[ji studio]_[]_[1]_[1].md",
-        "download_url": "/menu/branding portfolio/[20240120]_[ji studio]_[ji studio]_[]_[1]_[1].md",
+        "name": "[20240120]_[ji studio]_[ji studio]_[jihp1.png]_[1]_[1].md",
+        "download_url": "/menu/branding portfolio/[20240120]_[ji studio]_[ji studio]_[jihp1.png]_[1]_[1].md",
         "folder": "branding portfolio/"
       },
       {
@@ -40,14 +34,20 @@
       },
       {
         "type": "file",
-        "name": "[20250210]_[lebois]_[]_[]_[]_[]_.md",
-        "download_url": "/menu/branding portfolio/[20250210]_[lebois]_[]_[]_[]_[]_.md",
+        "name": "[20250210]_[팜젤라또]_[팜젤라또]_[팜젤로고.png]_[description]_[author].md",
+        "download_url": "/menu/branding portfolio/[20250210]_[팜젤라또]_[팜젤라또]_[팜젤로고.png]_[description]_[author].md",
         "folder": "branding portfolio/"
       },
       {
         "type": "file",
-        "name": "[20250210]_[팜젤라또]_[팜젤라또]_[팜젤로고.png]_[description]_[author].md",
-        "download_url": "/menu/branding portfolio/[20250210]_[팜젤라또]_[팜젤라또]_[팜젤로고.png]_[description]_[author].md",
+        "name": "[lebois]_[fin logo.JPG]_[lebois].md",
+        "download_url": "/menu/branding portfolio/[lebois]_[fin logo.JPG]_[lebois].md",
+        "folder": "branding portfolio/"
+      },
+      {
+        "type": "file",
+        "name": "[육서담]_[fin logo.JPG]_[finstitch].md",
+        "download_url": "/menu/branding portfolio/[육서담]_[fin logo.JPG]_[finstitch].md",
         "folder": "branding portfolio/"
       }
     ],

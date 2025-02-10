@@ -2,11 +2,11 @@
 
 ## 브랜드 분석 및 전략  도출
 
-![alt text](img/fin1.png/)
+![alt text](img/fin1.png)
 
 ## 브랜드 네이밍
 
-![alt text](img/finstitchname2png)
+![alt text](img/finstitchname2.png)
 
 주식회사 원에이티의 미국 B2B 유니폼 티셔츠 시장으로 진출할 글로벌 브랜드<finstitch>를 개발하였습니다.
 
