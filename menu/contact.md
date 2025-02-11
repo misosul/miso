@@ -2,9 +2,6 @@
 
 <br>
 <br>
-<br>
-<br>
-
 
 카카오톡 문의 [link](https://open.kakao.com/o/s04x4Neh)
 

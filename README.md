@@ -95,3 +95,52 @@ style 폴더안에 style.css 파일을 열어주세요.
 # 도메인 설정 방법
 
 https://taedonn.tistory.com/22
+
+
+# 글자 스타일
+
+- ###### NO.37 / 2025.01.15. 09:00•essay
+
+# 영상 코드
+
+
+<video controls>
+  <source src="https://drive.google.com/uc?export=download&id=18xxyOnEWpTeaSMzXND8t2y1g0xrPvTdm" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+# 이미지 롤링 코드 
+
+<div class="slider h-[600px]">
+
+![alt text](https://picsum.photos/id/1015/600/400)
+
+![alt text](https://picsum.photos/id/1025/400/600)
+
+![alt text](https://picsum.photos/id/1035/800/400)
+
+![alt text](https://picsum.photos/id/1045/600/400)
+
+![alt text](https://picsum.photos/id/1055/600/400)
+
+</div>
+
+
+<div class="gallery4">
+
+![alt text](img/image.png)
+
+![alt text](img/image.png)
+
+![alt text](img/image.png)
+
+![alt text](img/image.png)
+
+![alt text](img/image.png)
+
+![alt text](img/image.png)
+
+![alt text](img/image.png)
+
+![alt text](img/image.png)
+</div>
