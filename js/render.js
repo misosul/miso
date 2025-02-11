@@ -66,7 +66,6 @@ async function renderMenu() {
     link.classList.add(...menuListStyle.split(" "));
     link.classList.add(`${menu.name.replaceAll(" ", "_")}`);
 
-
     link.href = menu.download_url;
     // 확장자를 제외하고 이름만 innerText로 사용
     const menuName = menu.type == "file" ? menu.name.split(".")[0] : menu.name;
@@ -652,7 +651,6 @@ async function initialize() {
 
     // 메뉴 로딩
     await initDataBlogMenu();
-    await initDataSnsList();
     renderMenu();
     const menu = blogMenu[0];
     if (menu.type === "dir") {
@@ -670,7 +668,6 @@ async function initialize() {
   ) {
     // 메뉴 로딩
     await initDataBlogMenu();
-    await initDataSnsList();
 
     renderMenu();
     // 블로그 리스트 로딩
@@ -684,7 +681,6 @@ async function initialize() {
   } else {
     // 메뉴 로딩
     await initDataBlogMenu();
-    await initDataSnsList();
     renderMenu();
 
     // 블로그 상세 정보 로딩
