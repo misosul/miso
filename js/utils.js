@@ -64,6 +64,7 @@ function extractFileInfo(filename) {
   // 파일 이름에서 정보 추출하는 함수
 
   // 정규 표현식을 사용하여 날짜, 제목, 카테고리, 썸네일, 저자 정보 추출
+
   const regex = /^\[(.*?)\]_\[(.*?)\]_\[(.*?)\]_\[(.*?)\].(md)$/;
   const matches = filename.match(regex);
   // console.log(`extractFileInfo: ${matches}`);
@@ -78,6 +79,7 @@ function extractFileInfo(filename) {
       // description: matches[5].length > 25 ? matches[5].substring(0, 25) + '...' : matches[5],
       description: matches[4],
       fileType: matches[5],
+
     };
   }
   return null;

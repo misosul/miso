@@ -64,7 +64,7 @@ async function renderMenu() {
 
     // (static) index.html: <div id="contents" class="mt-6 grid-cols-3"></div>
     link.classList.add(...menuListStyle.split(" "));
-    link.classList.add(`${menu.name}`);
+    link.classList.add(`${menu.name.replaceAll(" ","_")}`);
 
     link.href = menu.download_url;
     // 확장자를 제외하고 이름만 innerText로 사용

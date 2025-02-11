@@ -6,22 +6,59 @@
   },
   {
     "type": "dir",
-    "name": "brand portfoilo",
+
+    "name": "branding portfolio",
     "children": [
       {
         "type": "file",
-        "name": "[title]_[thumnail]_[description].md",
-        "download_url": "/menu/brand portfoilo/[title]_[thumnail]_[description].md",
-        "folder": "brand portfoilo/"
+        "name": "[20240119]_[finstitch]_[finstitch]_[fin logo.JPG]_[gg]_[].md",
+        "download_url": "/menu/branding portfolio/[20240119]_[finstitch]_[finstitch]_[fin logo.JPG]_[gg]_[].md",
+        "folder": "branding portfolio/"
       },
       {
         "type": "file",
-        "name": "[썸네일이 없는 테스트 파일]_[]_[이 파일은 테스트 파일입니다.].md",
-        "download_url": "/menu/brand portfoilo/[썸네일이 없는 테스트 파일]_[]_[이 파일은 테스트 파일입니다.].md",
-        "folder": "brand portfoilo/"
+        "name": "[20240120]_[ji studio]_[ji studio]_[jihp1.png]_[1]_[1].md",
+        "download_url": "/menu/branding portfolio/[20240120]_[ji studio]_[ji studio]_[jihp1.png]_[1]_[1].md",
+        "folder": "branding portfolio/"
+      },
+      {
+        "type": "file",
+        "name": "[20240505]_[블로그 글 양식]_[markdown]_[test_1.jpg]_[마크다운 양식입니다. 참고하여 블로그 글을 작성해주세요. 각 언어별 하이라이팅도 지원합니다.]_[].md",
+        "download_url": "/menu/branding portfolio/[20240505]_[블로그 글 양식]_[markdown]_[test_1.jpg]_[마크다운 양식입니다. 참고하여 블로그 글을 작성해주세요. 각 언어별 하이라이팅도 지원합니다.]_[].md",
+        "folder": "branding portfolio/"
+      },
+      {
+        "type": "file",
+        "name": "[20250210]_[팜젤라또]_[팜젤라또]_[팜젤로고.png]_[description]_[author].md",
+        "download_url": "/menu/branding portfolio/[20250210]_[팜젤라또]_[팜젤라또]_[팜젤로고.png]_[description]_[author].md",
+        "folder": "branding portfolio/"
+      },
+      {
+        "type": "file",
+        "name": "[lebois]_[fin logo.JPG]_[lebois].md",
+        "download_url": "/menu/branding portfolio/[lebois]_[fin logo.JPG]_[lebois].md",
+        "folder": "branding portfolio/"
+      },
+      {
+        "type": "file",
+        "name": "[부여제철소]_[fin logo.JPG]_[1].md",
+        "download_url": "/menu/branding portfolio/[부여제철소]_[fin logo.JPG]_[1].md",
+        "folder": "branding portfolio/"
+      },
+      {
+        "type": "file",
+        "name": "[육서담]_[fin logo.JPG]_[finstitch].md",
+        "download_url": "/menu/branding portfolio/[육서담]_[fin logo.JPG]_[finstitch].md",
+        "folder": "branding portfolio/"
       }
     ],
-    "download_url": "/menu/brand portfoilo"
+    "download_url": "/menu/branding portfolio"
+  },
+  {
+    "type": "file",
+    "name": "branding process.md",
+    "download_url": "/menu/branding process.md"
+
   },
   {
     "type": "file",
@@ -34,14 +71,28 @@
     "children": [
       {
         "type": "file",
-        "name": "[20240119]_[ㅎㅎ]_[gg]_[Frame5_1.png]_[gg].md",
-        "download_url": "/menu/projects/[20240119]_[ㅎㅎ]_[gg]_[Frame5_1.png]_[gg].md",
+
+        "name": "[20240119]_[buyeo tapas bar]_[]_[이 파일은 테스트 파일입니다.]_[].md",
+        "download_url": "/menu/projects/[20240119]_[buyeo tapas bar]_[]_[이 파일은 테스트 파일입니다.]_[].md",
         "folder": "projects/"
       },
       {
         "type": "file",
-        "name": "[블로그 글 양식]_[test_1.jpg]_[마크다운 양식입니다. 참고하여 블로그 글을 작성해주세요. 각 언어별 하이라이팅도 지원합니다.].md",
-        "download_url": "/menu/projects/[블로그 글 양식]_[test_1.jpg]_[마크다운 양식입니다. 참고하여 블로그 글을 작성해주세요. 각 언어별 하이라이팅도 지원합니다.].md",
+
+        "name": "[20240120]_[documentary film]_[film]_[]_[]_[].md",
+        "download_url": "/menu/projects/[20240120]_[documentary film]_[film]_[]_[]_[].md",
+        "folder": "projects/"
+      },
+      {
+        "type": "file",
+        "name": "[20240505]_[블로그 글 양식]_[markdown]_[test_1.jpg]_[마크다운 양식입니다. 참고하여 블로그 글을 작성해주세요. 각 언어별 하이라이팅도 지원합니다.]_[].md",
+        "download_url": "/menu/projects/[20240505]_[블로그 글 양식]_[markdown]_[test_1.jpg]_[마크다운 양식입니다. 참고하여 블로그 글을 작성해주세요. 각 언어별 하이라이팅도 지원합니다.]_[].md",
+        "folder": "projects/"
+      },
+      {
+        "type": "file",
+        "name": "[date]_[title]_[category]_[thumnail]_[description]_[author].md",
+        "download_url": "/menu/projects/[date]_[title]_[category]_[thumnail]_[description]_[author].md",
         "folder": "projects/"
       }
     ],
@@ -51,5 +102,6 @@
     "type": "file",
     "name": "testme.md",
     "download_url": "/menu/testme.md"
+
   }
 ]
