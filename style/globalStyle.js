@@ -1,5 +1,5 @@
 // menu style
-const menuListStyle = `text-3xl leading-snug mb-[-0.275rem] text-surface hover:text-graylv3 font-medium capitalize`;
+const menuListStyle = `text-3xl leading-snug mb-[-0.275rem] text-surface hover:text-graylv3 font-normal capitalize`;
 
 // mobile menu style
 const mobileMenuStyle = `m-0 block py-4 px-6`;
@@ -59,7 +59,7 @@ const bloglistFirstCardImgStyle = `w-full  object-cover object-center overflow-h
 const bloglistFirstCardDescriptionStyle = `text-graylv4 text-base font-normal leading-snug md:max-h-40 md:line-clamp-[7] line-clamp-3 mb-3`;
 
 const bloglistCardStyle = `overflow-hidden bg-white transition duration-200 ease-in-out hover:-translate-y-1 cursor-poitner col-span-1 w-auto cursor-pointer`;
-const bloglistCardImgStyle = `w-full aspect-video object-cover object-center overflow-hidden`;
+const bloglistCardImgStyle = `w-full aspect-square object-cover object-center overflow-hidden`;
 
 const bloglistCardBodyStyle = `h-full w-full opacity-100 duration-300 bottom-0`;
 const bloglistCardTitleStyle = `font-bold text-base my-2`;

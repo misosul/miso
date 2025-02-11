@@ -94,21 +94,30 @@ async function renderMenu() {
     document.getElementById("menu").appendChild(link);
   });
 
-  if (snsList.length > 0) {
-    const br = document.createElement("hr");
+  const br = document.createElement("hr");
 
-    br.classList.add(...["mx-4", "md:mx-0"]);
-    document.getElementById("menu").appendChild(br);
-  }
-  snsList.forEach((sns, index) => {
-    const link = document.createElement("a");
-    link.classList.add(...menuListStyle.split(" "));
+  document.getElementById("menu").appendChild(br);
+  const link = document.createElement("a");
 
-    link.target = "_blank";
-    link.href = sns.link;
-    link.innerText = sns.text;
-    document.getElementById("menu").appendChild(link);
-  });
+  // (static) index.html: <div id="contents" class="mt-6 grid-cols-3"></div>
+  link.classList.add(...menuListStyle.split(" "));
+  link.classList.add(`contact.md`);
+
+  link.href = "/contact.md";
+  // 확장자를 제외하고 이름만 innerText로 사용
+  const menuName = "contact";
+  link.innerText = menuName;
+
+  link.onclick = (event) => {
+    // 메뉴 링크 클릭 시 이벤트 중지 후 menu 내용을 읽어와 contents 영역에 렌더링
+    event.preventDefault();
+    renderOtherContents({
+      type: "file",
+      name: "contact.md",
+      download_url: "/contact.md",
+    });
+  };
+  document.getElementById("menu").appendChild(link);
 
   // // 검색 버튼 클릭 시 검색창 출력
   // const searchButton = document.getElementById("search-button");
@@ -319,48 +328,53 @@ function renderBlogList(list, searchResult = null, currentPage = 1) {
   const endIndex = currentPage * pageUnit;
 
   // console.log("blogList", blogList);
-  list.slice(startIndex, endIndex).forEach((post, index) => {
-    const postInfo = extractFileInfo(post.name);
-    if (postInfo) {
-      // console.log(postInfo)
-      const cardElement = createCardElement(postInfo, index);
+  if (list.length <= 0) {
+    const empty = document.createElement("span");
+    empty.innerText = "폴더가 비어 있습니다";
+    document.getElementById("blog-posts").appendChild(empty);
+  } else
+    list.slice(startIndex, endIndex).forEach((post, index) => {
+      const postInfo = extractFileInfo(post.name);
+      if (postInfo) {
+        // console.log(postInfo)
+        const cardElement = createCardElement(postInfo, index);
 
-      cardElement.onclick = (event) => {
-        // 블로그 게시글 링크 클릭 시 이벤트 중지 후 post 내용을 읽어와 contents 영역에 렌더링
-        event.preventDefault();
-        // contents 영역을 보이게 처리
-        document.getElementById("contents").style.display = "block";
-        // blog-posts 영역을 보이지 않게 처리
-        document.getElementById("blog-posts").style.display = "none";
-        document.getElementById("pagination").style.display = "none";
+        cardElement.onclick = (event) => {
+          // 블로그 게시글 링크 클릭 시 이벤트 중지 후 post 내용을 읽어와 contents 영역에 렌더링
+          event.preventDefault();
+          // contents 영역을 보이게 처리
+          document.getElementById("contents").style.display = "block";
+          // blog-posts 영역을 보이지 않게 처리
+          document.getElementById("blog-posts").style.display = "none";
+          document.getElementById("pagination").style.display = "none";
 
-        // console.log(post)
-        // console.log(post.download_url)
-        let postDownloadUrl;
-        if (!isLocal && localDataUsing) {
-          postDownloadUrl = `${url.origin}/${siteConfig.repositoryName}${post.download_url}`;
-        } else {
-          postDownloadUrl = post.download_url;
-        }
-        try {
-          fetch(postDownloadUrl)
-            .then((response) => response.text())
-            .then((text) => styleMarkdown("post", text, postInfo))
-            .then(() => {
-              // 렌더링 후에는 URL 변경(query string으로 블로그 포스트 이름 추가)
-              const url = new URL(origin);
-              url.searchParams.set("post", post.name);
-              url.searchParams.set("folder", post.folder);
+          // console.log(post)
+          // console.log(post.download_url)
+          let postDownloadUrl;
+          if (!isLocal && localDataUsing) {
+            postDownloadUrl = `${url.origin}/${siteConfig.repositoryName}${post.download_url}`;
+          } else {
+            postDownloadUrl = post.download_url;
+          }
+          try {
+            fetch(postDownloadUrl)
+              .then((response) => response.text())
+              .then((text) => styleMarkdown("post", text, postInfo))
+              .then(() => {
+                // 렌더링 후에는 URL 변경(query string으로 블로그 포스트 이름 추가)
+                const url = new URL(origin);
+                url.searchParams.set("post", post.name);
+                url.searchParams.set("folder", post.folder);
 
-              window.history.pushState({}, "", url);
-            });
-        } catch (error) {
-          styleMarkdown("post", "# Error입니다. 파일명을 확인해주세요.");
-        }
-      };
-      document.getElementById("blog-posts").appendChild(cardElement);
-    }
-  });
+                window.history.pushState({}, "", url);
+              });
+          } catch (error) {
+            styleMarkdown("post", "# Error입니다. 파일명을 확인해주세요.");
+          }
+        };
+        document.getElementById("blog-posts").appendChild(cardElement);
+      }
+    });
 
   // contents 영역을 보이지 않게 처리
   document.getElementById("contents").style.display = "none";
@@ -383,6 +397,7 @@ function renderOtherContents(menu) {
     };
   }
   let menuDownloadUrl;
+
   if (!isLocal && localDataUsing) {
     menuDownloadUrl = `${url.origin}/${siteConfig.repositoryName}${menu.download_url}`;
   } else {
@@ -638,9 +653,16 @@ async function initialize() {
     await initDataBlogMenu();
     await initDataSnsList();
     renderMenu();
-    fetch(origin + "menu/about.md")
-      .then((response) => response.text())
-      .then((text) => styleMarkdown("menu", text));
+    const menu = blogMenu[0];
+    if (menu.type === "dir") {
+      await initDataBlogList();
+
+      renderBlogList(menu.children);
+    } else {
+      fetch(origin + blogMenu[0].download_url)
+        .then((response) => response.text())
+        .then((text) => styleMarkdown("menu", text));
+    }
   } else if (
     url.search.split("=")[1] &&
     !url.search.split("=")[1].includes(".md")
@@ -653,12 +675,11 @@ async function initialize() {
     // 블로그 리스트 로딩
     await initDataBlogList();
     const folder = blogMenu.find(
-      (b) => b.name.toLowerCase() == url.search.split("=")[1].toLowerCase()
+      (b) =>
+        b.name.toLowerCase() ==
+        url.search.split("=")[1].toLowerCase().replaceAll("+", " ")
     );
     renderBlogList(folder.children);
-
-    // 블로그 카테고리 로딩
-    renderBlogCategory();
   } else {
     // 메뉴 로딩
     await initDataBlogMenu();
@@ -669,9 +690,17 @@ async function initialize() {
     if (url.search.split("=")[0] === "?menu") {
       document.getElementById("blog-posts").style.display = "none";
       document.getElementById("contents").style.display = "block";
+      // console.log(postNameDecode);
+
+      const fileName = url.search.split("=")[1];
+      const file = blogMenu.find((b) => b.name == fileName);
 
       try {
-        fetch(origin + "menu/" + url.search.split("=")[1])
+        fetch(
+          fileName === "contact.md"
+            ? origin + fileName
+            : origin + file.download_url
+        )
           .then((response) => response.text())
           .then((text) => styleMarkdown("menu", text))
           .then(() => {
@@ -686,11 +715,16 @@ async function initialize() {
       document.getElementById("contents").style.display = "block";
       document.getElementById("blog-posts").style.display = "none";
 
-      postNameDecode = decodeURI(url.search.split("=")[1]).replaceAll("+", " ");
       // console.log(postNameDecode);
-      postInfo = extractFileInfo(postNameDecode);
+      const params = new URLSearchParams(window.location.search);
+      const folder = params.get("folder");
+      const post = params.get("post");
+
+      postInfo = extractFileInfo(post);
       try {
-        fetch(origin + "blog/" + postNameDecode)
+        fetch(
+          folder ? origin + "menu/" + folder + post : origin + "menu/" + post
+        )
           .then((response) => response.text())
           .then((text) => styleMarkdown("post", text, postInfo))
           .then(() => {
