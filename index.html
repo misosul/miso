@@ -11,42 +11,45 @@
     <!-- hightlight.js -->
     <link rel="stylesheet" href="./library/highlight_default.min.css" />
     <script src="./library/highlight_highlight.min.js"></script>
-    
+
     <link rel="stylesheet" href="./library/highlight_ally-light.min.css" />
 
     <!-- custom css -->
     <link rel="stylesheet" href=" style/style.css" />
     <link
-    rel="stylesheet"
-    as="style"
-    crossOrigin=""
-    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"
-  />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/path-browserify/1.0.1/path.min.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+      rel="stylesheet"
+      as="style"
+      crossorigin=""
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/path-browserify/1.0.1/path.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
     <!-- tailwind -->
     <script src="./library/tailwind-3.4.1.js"></script>
-    <script >
-  const stylePlugin = {
-  renderer: {
-    image(href, title, text) {
-      // text가 undefined일 경우 빈 문자열로 처리
-      const altText = text || '';
+    <script>
+      const stylePlugin = {
+        renderer: {
+          image(href, title, text) {
+            // text가 undefined일 경우 빈 문자열로 처리
+            const altText = text || "";
 
-      // 스타일 파싱
-      const styleMatch = altText.match(/\{style="([^"]+)"\}/);
-      const style = styleMatch ? styleMatch[1] : '';
+            // 스타일 파싱
+            const styleMatch = altText.match(/\{style="([^"]+)"\}/);
+            const style = styleMatch ? styleMatch[1] : "";
 
-      // 텍스트에서 {style=...} 제거
-      const cleanText = altText.replace(/\{style="[^"]+"\}/, '').trim();
+            // 텍스트에서 {style=...} 제거
+            const cleanText = altText.replace(/\{style="[^"]+"\}/, "").trim();
 
-      // 이미지 태그 생성
-      return `<img src="${href}" alt="${cleanText}" style="${style}" />`;
-    }
-  }
-};
+            // 이미지 태그 생성
+            return `<img src="${href}" alt="${cleanText}" style="${style}" />`;
+          },
+        },
+      };
     </script>
     <script>
       tailwind.config = {
@@ -94,43 +97,54 @@
     </style>
   </head>
   <body class="w-full text-surface flex flex-col md:flex-row">
-    <header class="w-full bg-white/40 mx-auto backdrop-blur md:max-w-xs">
+    <header
+      class="w-full bg-white/40 md:bg-transparent mx-auto backdrop-blur md:max-w-xs"
+    >
       <nav
         class="flex flex-col container min-w-64 max-w-full mx-auto p-4 md:p-8 relative sticky !top-0"
       >
-        <!-- 블로그 제목 영역 --> <div class="flex justify-between">
-
+        <!-- 블로그 제목 영역 -->
+        <div class="flex justify-between">
           <h1
             id="blog-title"
-            class="md:text-3xl text-2xl leading-6 mr-auto font-semibold text-gray-900 cursor-pointer "
+            class="md:text-3xl text-2xl leading-6 mr-auto font-semibold text-gray-900 cursor-pointer"
           >
             WENIVLOG
-          </h1>        <!-- // 블로그 제목 영역 -->
-          <!-- 메뉴 영역 --> <div class="md:hidden w-6 h-6">
+          </h1>
+          <!-- // 블로그 제목 영역 -->
+          <!-- 메뉴 영역 -->
+          <div class="md:hidden w-6 h-6">
             <button id="menu-button">
               <span class="sr-only">메뉴 열기</span>
             </button>
+          </div>
         </div>
-      </div>
-      <hr class="" />
-        <!-- 메뉴 아이템들 --> <div id="menu" class="flex flex-col hidden md:flex">
-        </div>
+        <hr class="" />
+        <!-- 메뉴 아이템들 -->
+        <div id="menu" class="flex flex-col hidden md:flex"></div>
       </nav>
-      
-         <!-- 모바일에서 메뉴 영역이 보이도록 하는 영역 --><div
+
+      <!-- 모바일에서 메뉴 영역이 보이도록 하는 영역 -->
+      <div
         id="mobileMenu"
         class="absolute bg-white/95 backdrop-blur w-full max-w-media z-10 md:hidden"
-      ></div>   <!-- // 모바일에서 메뉴 영역이 보이도록 하는 영역 -->
+      ></div>
+      <!-- // 모바일에서 메뉴 영역이 보이도록 하는 영역 -->
     </header>
-    <main class="container md:p-8 md:px-12 w-full mx-auto max-w-media overflow-x-hidden">
-      <!-- 블로그 포스트 리스트 영역 --><div 
+    <main
+      class="container md:p-8 md:px-12 w-full mx-auto max-w-media overflow-x-hidden"
+    >
+      <!-- 블로그 포스트 리스트 영역 -->
+      <div
         id="blog-posts"
         class="grid md:grid-cols-3 lg:grid-cols-3 gap-x-2 lg:gap-y-10 gap-y-4 mb-20 max-w-[760px] m-auto px-4"
       ></div>
-         <!-- // contents 영역--><div
+      <!-- // contents 영역-->
+      <div
         id="contents"
         class="mb-28 grid-cols-3 mx-auto px-4 md:p-0 max-w-[990px]"
-      ></div>   <!-- // contents 영역-->
+      ></div>
+      <!-- // contents 영역-->
       <!-- pagination -->
       <div id="pagination"></div>
     </main>
@@ -168,7 +182,7 @@
     <script src="js/registry.js"></script>
   </body>
 </html>
-   <!-- <div
+<!-- <div
           class="search-cont w-80 hidden md:block md:relative absolute z-10 rounded-2xl p-4 bottom-[-12px] right-2 xl:right-0 translate-y-full bg-white/40 backdrop-blur w-96 max-w-full md:p-0 md:top-0 md:right-0 md:translate-y-0 md:w-80 md:ml-10"
         >
           <label for="search-input">
@@ -189,4 +203,4 @@
             </button>
           </div>
         </div> -->
-        <!-- // 메뉴 영역 -->
+<!-- // 메뉴 영역 -->
