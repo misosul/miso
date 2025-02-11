@@ -64,11 +64,12 @@ async function renderMenu() {
 
     // (static) index.html: <div id="contents" class="mt-6 grid-cols-3"></div>
     link.classList.add(...menuListStyle.split(" "));
-    link.classList.add(`${menu.name.replaceAll(" ","_")}`);
+    link.classList.add(`${menu.name.replaceAll(" ", "_")}`);
+
 
     link.href = menu.download_url;
     // 확장자를 제외하고 이름만 innerText로 사용
-    const menuName = menu.type == "file" ?  menu.name.split(".")[0]  : menu.name
+    const menuName = menu.type == "file" ? menu.name.split(".")[0] : menu.name;
     link.innerText = menuName;
 
     link.onclick = (event) => {
@@ -94,25 +95,30 @@ async function renderMenu() {
     document.getElementById("menu").appendChild(link);
   });
 
-  if (snsList.length > 0) { 
-    const br = document.createElement("hr");
+  const br = document.createElement("hr");
 
-    br.classList.add(...["mx-4" ,'md:mx-0'])
-    document.getElementById("menu").appendChild(br);
+  document.getElementById("menu").appendChild(br);
+  const link = document.createElement("a");
 
-  }
-  snsList.forEach((sns, index) => {
-    const link = document.createElement("a");
-    link.classList.add(...menuListStyle.split(" "));
+  // (static) index.html: <div id="contents" class="mt-6 grid-cols-3"></div>
+  link.classList.add(...menuListStyle.split(" "));
+  link.classList.add(`contact.md`);
 
-    link.target = "_blank";
-    link.href = sns.link;
-    link.innerText = sns.text
-    document.getElementById("menu").appendChild(link);
-    
-  })
+  link.href = "/contact.md";
+  // 확장자를 제외하고 이름만 innerText로 사용
+  const menuName = "contact";
+  link.innerText = menuName;
 
-
+  link.onclick = (event) => {
+    // 메뉴 링크 클릭 시 이벤트 중지 후 menu 내용을 읽어와 contents 영역에 렌더링
+    event.preventDefault();
+    renderOtherContents({
+      type: "file",
+      name: "contact.md",
+      download_url: "/contact.md",
+    });
+  };
+  document.getElementById("menu").appendChild(link);
 
   // // 검색 버튼 클릭 시 검색창 출력
   // const searchButton = document.getElementById("search-button");
@@ -199,14 +205,12 @@ function createCardElement(fileInfo, index) {
     const img = document.createElement("img");
     img.src = fileInfo.thumbnail;
     img.alt = fileInfo.title;
-      img.classList.add(...bloglistCardImgStyle.split(" "));
+    img.classList.add(...bloglistCardImgStyle.split(" "));
     card.appendChild(img);
   }
 
   const cardBody = document.createElement("div");
   cardBody.classList.add(...bloglistCardBodyStyle.split(" "));
-
- 
 
   // category 이벤트 생성으로 카테고리 클릭 시 해당 카테고리로 검색
   // category.onclick = (event) => {
@@ -224,11 +228,11 @@ function createCardElement(fileInfo, index) {
 
   description.classList.add(...bloglistCardDescriptionStyle.split(" "));
   description.textContent = fileInfo.description;
-  const dot = document.createElement("span")
+  const dot = document.createElement("span");
   dot.classList.add(...bloglistCardCategoryStyle.split(" "));
-  description.appendChild(dot);;
-  dot.textContent = "•"
- const category = document.createElement("span");
+  description.appendChild(dot);
+  dot.textContent = "•";
+  const category = document.createElement("span");
   // category.classList.add(...bloglistCardCategoryStyle.split(" "));
   category.textContent = fileInfo.category;
   description.appendChild(category);
@@ -260,7 +264,7 @@ function createCardElement(fileInfo, index) {
   return card;
 }
 
-function renderBlogList(list,searchResult = null, currentPage = 1) {
+function renderBlogList(list, searchResult = null, currentPage = 1) {
   /*
     blog의 main 영역에 블로그 포스트 목록을 렌더링
     1. 검색 키워드 없이 대부분 renderBlogList()로 사용.
@@ -311,21 +315,26 @@ function renderBlogList(list,searchResult = null, currentPage = 1) {
   //   document.getElementById("contents").style.display = "none";
   // } else {
   // 검색 keyword가 없을 경우
-  
+
   // 페이지에 맞는거 bloglist 찾기
-    document.getElementById("blog-posts").style.display = "grid";
-    document.getElementById("pagination").style.display = "flex";
-    document.getElementById("blog-posts").innerHTML = "";
+  document.getElementById("blog-posts").style.display = "grid";
+  document.getElementById("pagination").style.display = "flex";
+  document.getElementById("blog-posts").innerHTML = "";
 
-    const totalPage = Math.ceil(blogList.length / pageUnit);
-    initPagination(totalPage);
-    renderPagination(list,totalPage, 1);
+  const totalPage = Math.ceil(blogList.length / pageUnit);
+  initPagination(totalPage);
+  renderPagination(list, totalPage, 1);
 
-    const startIndex = (currentPage - 1) * pageUnit;
-    const endIndex = currentPage * pageUnit;
+  const startIndex = (currentPage - 1) * pageUnit;
+  const endIndex = currentPage * pageUnit;
 
-    // console.log("blogList", blogList);
-  list.slice(startIndex, endIndex).forEach((post, index) => {
+  // console.log("blogList", blogList);
+  if (list.length <= 0) {
+    const empty = document.createElement("span");
+    empty.innerText = "폴더가 비어 있습니다";
+    document.getElementById("blog-posts").appendChild(empty);
+  } else
+    list.slice(startIndex, endIndex).forEach((post, index) => {
       const postInfo = extractFileInfo(post.name);
       if (postInfo) {
         // console.log(postInfo)
@@ -351,13 +360,12 @@ function renderBlogList(list,searchResult = null, currentPage = 1) {
           try {
             fetch(postDownloadUrl)
               .then((response) => response.text())
-              .then((text) => styleMarkdown("post", text, postInfo)
-              )
+              .then((text) => styleMarkdown("post", text, postInfo))
               .then(() => {
                 // 렌더링 후에는 URL 변경(query string으로 블로그 포스트 이름 추가)
                 const url = new URL(origin);
                 url.searchParams.set("post", post.name);
-                url.searchParams.set('folder',post.folder)
+                url.searchParams.set("folder", post.folder);
 
                 window.history.pushState({}, "", url);
               });
@@ -369,8 +377,8 @@ function renderBlogList(list,searchResult = null, currentPage = 1) {
       }
     });
 
-    // contents 영역을 보이지 않게 처리
-    document.getElementById("contents").style.display = "none";
+  // contents 영역을 보이지 않게 처리
+  document.getElementById("contents").style.display = "none";
   // }
 }
 
@@ -390,8 +398,9 @@ function renderOtherContents(menu) {
     };
   }
   let menuDownloadUrl;
+
   if (!isLocal && localDataUsing) {
-    menuDownloadUrl =`${url.origin}/${siteConfig.repositoryName}${menu.download_url}`;
+    menuDownloadUrl = `${url.origin}/${siteConfig.repositoryName}${menu.download_url}`;
   } else {
     menuDownloadUrl = menu.download_url;
   }
@@ -540,12 +549,12 @@ function renderPagination(totalPage, currentPage, targetList = null) {
   }
   prevButton.onclick = (event) => {
     event.preventDefault();
-    renderBlogList(list,targetList, currentPage - 1);
+    renderBlogList(list, targetList, currentPage - 1);
     renderPagination(totalPage, currentPage - 1, targetList);
   };
   nextButton.onclick = (event) => {
     event.preventDefault();
-    renderBlogList(list,targetList, currentPage + 1);
+    renderBlogList(list, targetList, currentPage + 1);
     renderPagination(totalPage, currentPage + 1, targetList);
   };
 
@@ -563,7 +572,7 @@ function renderPagination(totalPage, currentPage, targetList = null) {
         page.classList.add("font-normal");
       }
       page.onclick = (event) => {
-        renderBlogList(list,targetList, index + 1);
+        renderBlogList(list, targetList, index + 1);
         renderPagination(totalPage, index + 1, targetList);
       };
     });
@@ -641,15 +650,24 @@ async function initialize() {
     document.getElementById("blog-posts").style.display = "none";
     document.getElementById("contents").style.display = "block";
 
-     // 메뉴 로딩
-     await initDataBlogMenu();
-     await initDataSnsList();
-     renderMenu();
-    fetch(origin + "menu/about.md")
-    .then((response) => response.text())
-    .then((text) => styleMarkdown("menu", text))
-  } else if (url.search.split("=")[1] && !url.search.split("=")[1].includes('.md')) {
-    
+    // 메뉴 로딩
+    await initDataBlogMenu();
+    await initDataSnsList();
+    renderMenu();
+    const menu = blogMenu[0];
+    if (menu.type === "dir") {
+      await initDataBlogList();
+
+      renderBlogList(menu.children);
+    } else {
+      fetch(origin + blogMenu[0].download_url)
+        .then((response) => response.text())
+        .then((text) => styleMarkdown("menu", text));
+    }
+  } else if (
+    url.search.split("=")[1] &&
+    !url.search.split("=")[1].includes(".md")
+  ) {
     // 메뉴 로딩
     await initDataBlogMenu();
     await initDataSnsList();
@@ -657,12 +675,12 @@ async function initialize() {
     renderMenu();
     // 블로그 리스트 로딩
     await initDataBlogList();
-    const folder = blogMenu.find(b => b.name.toLowerCase() == url.search.split("=")[1].toLowerCase())
+    const folder = blogMenu.find(
+      (b) =>
+        b.name.toLowerCase() ==
+        url.search.split("=")[1].toLowerCase().replaceAll("+", " ")
+    );
     renderBlogList(folder.children);
-
-    // 블로그 카테고리 로딩
-    renderBlogCategory();
-
   } else {
     // 메뉴 로딩
     await initDataBlogMenu();
@@ -673,9 +691,17 @@ async function initialize() {
     if (url.search.split("=")[0] === "?menu") {
       document.getElementById("blog-posts").style.display = "none";
       document.getElementById("contents").style.display = "block";
+      // console.log(postNameDecode);
+
+      const fileName = url.search.split("=")[1];
+      const file = blogMenu.find((b) => b.name == fileName);
 
       try {
-        fetch(origin + "menu/" + url.search.split("=")[1])
+        fetch(
+          fileName === "contact.md"
+            ? origin + fileName
+            : origin + file.download_url
+        )
           .then((response) => response.text())
           .then((text) => styleMarkdown("menu", text))
           .then(() => {
@@ -690,14 +716,18 @@ async function initialize() {
       document.getElementById("contents").style.display = "block";
       document.getElementById("blog-posts").style.display = "none";
 
-      postNameDecode = decodeURI(url.search.split("=")[1]).replaceAll("+", " ");
       // console.log(postNameDecode);
-      postInfo = extractFileInfo(postNameDecode);
+      const params = new URLSearchParams(window.location.search);
+      const folder = params.get("folder");
+      const post = params.get("post");
+
+      postInfo = extractFileInfo(post);
       try {
-        fetch(origin + "blog/" + postNameDecode)
+        fetch(
+          folder ? origin + "menu/" + folder + post : origin + "menu/" + post
+        )
           .then((response) => response.text())
-          .then((text) => styleMarkdown("post", text, postInfo)
-          )
+          .then((text) => styleMarkdown("post", text, postInfo))
           .then(() => {
             // 렌더링 후에는 URL 변경(query string으로 블로그 포스트 이름 추가)
             const url = new URL(window.location.href);

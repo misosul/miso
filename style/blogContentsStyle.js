@@ -1,5 +1,3 @@
-
-
 function styleMarkdown(kinds, text, title_info = null) {
   /* 
     메뉴와 블로그 상세 목록을 globalStyle.js에 정의된 tailwind css로 스타일링 합니다. 
@@ -8,23 +6,21 @@ function styleMarkdown(kinds, text, title_info = null) {
   const stylePlugin = {
     renderer: {
       image({ text, href, title }) {
-
-        
         // text가 undefined일 경우 빈 문자열로 처리
-        const altText = text || '';
-  
+        const altText = text || "";
+
         // 스타일 파싱
         const styleMatch = altText.match(/\{style="([^"]+)"\}/);
-        const style = styleMatch ? styleMatch[1] : '';
-  
+        const style = styleMatch ? styleMatch[1] : "";
+
         // 텍스트에서 {style=...} 제거
-        const cleanText = altText.replace(/\{style="[^"]+"\}/, '').trim();
+        const cleanText = altText.replace(/\{style="[^"]+"\}/, "").trim();
         // 이미지 태그 생성
         return `<img src="${href}" alt="${cleanText}" style="${style}" />`;
-      }
-    }
+      },
+    },
   };
-  
+
   marked.use(stylePlugin);
   const tempDiv = document.createElement("div");
   const html = marked.parse(text);

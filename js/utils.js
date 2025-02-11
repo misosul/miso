@@ -40,24 +40,46 @@ function escapeHtml(text) {
     .replace(/'/g, "&#039;");
 }
 
-function extractFileInfo(filename) {
+function extractFileMenuInfo(filename) {
   // render.js에서 사용
   // 파일 이름에서 정보 추출하는 함수
 
   // 정규 표현식을 사용하여 날짜, 제목, 카테고리, 썸네일, 저자 정보 추출
-  const regex = /^\[(.*?)\]_\[(.*?)\]_\[(.*?)\].(md)$/;
+  const regex = /^\[(.*?)\]_\[(.*?)\].(md)$/;
   const matches = filename.match(regex);
   // console.log(`extractFileInfo: ${matches}`);
 
   if (matches) {
     return {
-      title: matches[1],
-      thumbnail: matches[2]
-        ? "img/" + matches[2]
+      priority: Number(matches[1] ?? "9999"),
+      title: matches[2],
+      fileType: matches[3],
+    };
+  }
+  return null;
+}
+
+function extractFileInfo(filename) {
+  // render.js에서 사용
+  // 파일 이름에서 정보 추출하는 함수
+
+  // 정규 표현식을 사용하여 날짜, 제목, 카테고리, 썸네일, 저자 정보 추출
+
+  const regex = /^\[(.*?)\]_\[(.*?)\]_\[(.*?)\]_\[(.*?)\].(md)$/;
+  const matches = filename.match(regex);
+  // console.log(`extractFileInfo: ${matches}`);
+
+  if (matches) {
+    return {
+      priority: Number(matches[1] ?? "9999"),
+      title: matches[2],
+      thumbnail: matches[3]
+        ? "img/" + matches[3]
         : `img/thumb${Math.floor(Math.random() * 10) + 1}.webp`,
       // description: matches[5].length > 25 ? matches[5].substring(0, 25) + '...' : matches[5],
-      description: matches[3],
-      fileType: matches[4],
+      description: matches[4],
+      fileType: matches[5],
+
     };
   }
   return null;

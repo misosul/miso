@@ -21,13 +21,15 @@ github 가입
 ## vscode extendsion 설치
 
 
+
 1. Code Runner
 2. Live Server
 
 # 도메인 설정
 
-<https://taedonn.tistory.com/22>
+https://taedonn.tistory.com/22
 
 # Node 설치
 
-<https://nodejs.org/en>
+https://nodejs.org/en
+

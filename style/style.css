@@ -11,6 +11,12 @@ h6 {
   color: #8d9299; /* 이미지 설명 색상 */
 }
 
+iframe {
+  width: 100%;
+  max-width: 800px; /* 최대 너비 설정 (선택 사항) */
+  aspect-ratio: 16 / 9; /* 16:9 비율 유지 */
+}
+
 .gallery4 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
