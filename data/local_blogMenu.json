@@ -22,12 +22,6 @@
       },
       {
         "type": "file",
-        "name": "[20240120]_[부여제철소]_[부여제철소]_[]_[1]_[1].md",
-        "download_url": "/menu/branding portfolio/[20240120]_[부여제철소]_[부여제철소]_[]_[1]_[1].md",
-        "folder": "branding portfolio/"
-      },
-      {
-        "type": "file",
         "name": "[20240505]_[블로그 글 양식]_[markdown]_[test_1.jpg]_[마크다운 양식입니다. 참고하여 블로그 글을 작성해주세요. 각 언어별 하이라이팅도 지원합니다.]_[].md",
         "download_url": "/menu/branding portfolio/[20240505]_[블로그 글 양식]_[markdown]_[test_1.jpg]_[마크다운 양식입니다. 참고하여 블로그 글을 작성해주세요. 각 언어별 하이라이팅도 지원합니다.]_[].md",
         "folder": "branding portfolio/"
@@ -42,6 +36,12 @@
         "type": "file",
         "name": "[lebois]_[fin logo.JPG]_[lebois].md",
         "download_url": "/menu/branding portfolio/[lebois]_[fin logo.JPG]_[lebois].md",
+        "folder": "branding portfolio/"
+      },
+      {
+        "type": "file",
+        "name": "[부여제철소]_[fin logo.JPG]_[1].md",
+        "download_url": "/menu/branding portfolio/[부여제철소]_[fin logo.JPG]_[1].md",
         "folder": "branding portfolio/"
       },
       {
