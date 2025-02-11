@@ -4,7 +4,7 @@
 
 menu 폴더 안에는 .md 파일 혹은 폴더만 생성 가능합니다.
 
-.md 파일의 제목은 `[title]_[thumnail]_[description].md` 형식으로 작성해야 합니다.
+.md 파일의 제목은 `[priority]_[title]_[thumnail]_[description].md` 형식으로 작성해야 합니다.
 
 ## SNS 관리
 
@@ -14,8 +14,8 @@ sns 추가시 {text : "" , link : ""} <--- 여기를 복사해 [{},{},{}] 이런
 
 ## 블로그 작성
 
-1. 글은 menu 폴더에 작성하며, `[title]_[thumnail]_[description].md` 형식으로 작성합니다.
-2. 썸네일을 사용하지 않는 경우, `[title]_[]_[description].md` 형식으로 작성합니다.
+1. 글은 menu 폴더에 작성하며, `[priority]_[title]_[thumnail]_[description].md` 형식으로 작성합니다.
+2. 썸네일을 사용하지 않는 경우, `[priority]_[title]_[]_[description].md` 형식으로 작성합니다.
 3. 썸네일의 경로는 img 폴더에서 관리하거나 퍼블리싱 된 이미지 링크를 사용할 수 있습니다.
 4. 내 컴퓨터에서 미리보기(테스트)를 할 경우 getMenus.js파일을 선택후 상단 우측 Run(실행)버튼을 클릭.
 
@@ -25,6 +25,8 @@ sns 추가시 {text : "" , link : ""} <--- 여기를 복사해 [{},{},{}] 이런
 
 1. menu 폴더에 `사용하고싶은 메뉴 이름.md` 형식으로 저장하면 메뉴로 생성됩니다.
 2. `getMenus.js`파일 들어간후 상단 우측 Run(실행 / 재생버튼 모양)버튼을 클릭.
+
+- 우선순위 1. priority 숫자가 낮은 순서 2. title 영어 a,b,c 순서
 
 # 구글 등록
 
