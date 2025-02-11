@@ -35,11 +35,22 @@ if (isLocal) {
     const mainUrl = new URL(
       `http://127.0.0.1${url.port ? ":" + url.port : ""}`
     );
-    window.history.pushState({}, "", mainUrl);
+
     await initDataBlogList();
-    fetch(origin + "menu/about.md")
-    .then((response) => response.text())
-    .then((text) => styleMarkdown("menu", text))
+    const menu = blogMenu[0];
+    console.log("menu :>> ");
+    if (menu.type === "dir") {
+      document.getElementById("blog-posts").style.display = "block";
+      document.getElementById("contents").style.display = "none";
+      renderBlogList(menu.children);
+    } else {
+      document.getElementById("blog-posts").style.display = "none";
+      document.getElementById("contents").style.display = "block";
+      fetch(mainUrl + menu.download_url.slice(1))
+        .then((response) => response.text())
+        .then((text) => styleMarkdown("menu", text));
+    }
+    window.history.pushState({}, "", mainUrl);
     // renderBlogList();
   };
 } else {
@@ -61,15 +72,26 @@ if (isLocal) {
   document.title = siteConfig.blogTitle || defaultTitle;
 
   // 클릭했을 때 메인페이지로 이동
-  $blogTitle.onclick = () => {
+  $blogTitle.onclick = async () => {
     const url = new URL(
       `https://${siteConfig.username}.github.io/${siteConfig.repositoryName}/`
     );
     window.history.pushState({}, "", url);
     // renderBlogList();
-    fetch(origin + "menu/about.md")
-    .then((response) => response.text())
-    .then((text) => styleMarkdown("menu", text))
+    await initDataBlogList();
+
+    const menu = blogMenu[0];
+    if (menu.type === "dir") {
+      document.getElementById("blog-posts").style.display = "block";
+      document.getElementById("contents").style.display = "none";
+      renderBlogList(menu.children);
+    } else {
+      document.getElementById("blog-posts").style.display = "none";
+      document.getElementById("contents").style.display = "block";
+      fetch(origin + blogMenu[0].download_url)
+        .then((response) => response.text())
+        .then((text) => styleMarkdown("menu", text));
+    }
   };
 }
 
@@ -88,19 +110,21 @@ window.addEventListener("popstate", (event) => {
   // 뒤로간 url을 가져옴
   let url = new URL(window.location.href);
   if (!url.search.split("=")[1]) {
-        document.getElementById("blog-posts").style.display = "none";
-    document.getElementById("contents").style.display = "block"
+    document.getElementById("blog-posts").style.display = "none";
+    document.getElementById("contents").style.display = "block";
     fetch(origin + "menu/about.md")
-    .then((response) => response.text())
-    .then((text) => styleMarkdown("menu", text))
-  }else if ( !url.search.split("=")[1].includes('.md')) {
+      .then((response) => response.text())
+      .then((text) => styleMarkdown("menu", text));
+  } else if (!url.search.split("=")[1].includes(".md")) {
     // 블로그 리스트 로딩
-    const folder = blogMenu.find(bm => bm.name.toLowerCase() === url.search.split("=")[1].toLowerCase())
+    const folder = blogMenu.find(
+      (bm) => bm.name.toLowerCase() === url.search.split("=")[1].toLowerCase()
+    );
     renderBlogList(folder.children);
   } else if (url.search.split("=")[0] === "?menu") {
     // 메뉴 상세 정보 로딩
     document.getElementById("blog-posts").style.display = "none";
-    document.getElementById("contents").style.display = "block"
+    document.getElementById("contents").style.display = "block";
     fetch(origin + "menu/" + url.search.split("=")[1])
       .then((response) => response.text())
       .then((text) => {
@@ -119,10 +143,12 @@ window.addEventListener("popstate", (event) => {
       document.getElementById("blog-posts").style.display = "none";
       const params = new URLSearchParams(window.location.search);
       const post = params.get("post"); // "John"
-      const folder = params.get("folder");   // "30"
-      postNameDecode = post// decodeURI(url.search.split("=")[1]).replaceAll("+", " ");
+      const folder = params.get("folder"); // "30"
+      postNameDecode = post; // decodeURI(url.search.split("=")[1]).replaceAll("+", " ");
       postInfo = extractFileInfo(postNameDecode);
-      const link = folder ? `${origin}menu/${folder}${postNameDecode} `: `${origin}menu/${postNameDecode}`
+      const link = folder
+        ? `${origin}menu/${folder}${postNameDecode} `
+        : `${origin}menu/${postNameDecode}`;
       fetch(link)
         .then((response) => response.text())
         .then((text) =>

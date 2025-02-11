@@ -25,7 +25,7 @@ function styleMarkdown(kinds, text, title_info = null) {
   const tempDiv = document.createElement("div");
   const html = marked.parse(text);
   tempDiv.innerHTML = html;
-
+  console.log("html :>> ", html);
   tempDiv
     .querySelectorAll("h1")
     .forEach((h1) => h1.classList.add(...posth1Style.split(" ")));
@@ -187,6 +187,7 @@ function styleMarkdown(kinds, text, title_info = null) {
   while (contentsDiv.firstChild) {
     contentsDiv.removeChild(contentsDiv.firstChild);
   }
+  console.log("tempDiv :>> ", tempDiv);
   contentsDiv.appendChild(tempDiv);
 
   hljs.highlightAll();
