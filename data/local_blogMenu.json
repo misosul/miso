@@ -18,30 +18,37 @@
     "children": [
       {
         "type": "file",
-        "name": "[]_[finstitch]_[fin logo.JPG]_[finstitch].md",
-        "priority": 9999,
-        "download_url": "/menu/[3]_[branding portfolio].md/[]_[finstitch]_[fin logo.JPG]_[finstitch].md",
+        "name": "[1]_[finstitch]_[finlogo.JPG]_[Branding].md",
+        "priority": 1,
+        "download_url": "/menu/[3]_[branding portfolio].md/[1]_[finstitch]_[finlogo.JPG]_[Branding].md",
         "folder": "[3]_[branding portfolio].md/"
       },
       {
         "type": "file",
-        "name": "[]_[ji studio]_[jihp1.png]_[ji studio].md",
-        "priority": 9999,
-        "download_url": "/menu/[3]_[branding portfolio].md/[]_[ji studio]_[jihp1.png]_[ji studio].md",
+        "name": "[2]_[부여제철소]_[부여제철소로고_gr.png]_[Branding].md",
+        "priority": 2,
+        "download_url": "/menu/[3]_[branding portfolio].md/[2]_[부여제철소]_[부여제철소로고_gr.png]_[Branding].md",
         "folder": "[3]_[branding portfolio].md/"
       },
       {
         "type": "file",
-        "name": "[]_[lebois]_[fin logo.JPG]_[lebois].md",
-        "priority": 9999,
-        "download_url": "/menu/[3]_[branding portfolio].md/[]_[lebois]_[fin logo.JPG]_[lebois].md",
+        "name": "[3]_[ji studio]_[jihp1.png]_[Slogan&Story].md",
+        "priority": 3,
+        "download_url": "/menu/[3]_[branding portfolio].md/[3]_[ji studio]_[jihp1.png]_[Slogan&Story].md",
         "folder": "[3]_[branding portfolio].md/"
       },
       {
         "type": "file",
-        "name": "[]_[부여제철소]_[fin logo.JPG]_[1].md",
-        "priority": 9999,
-        "download_url": "/menu/[3]_[branding portfolio].md/[]_[부여제철소]_[fin logo.JPG]_[1].md",
+        "name": "[4]_[farmgelato]_[팜젤로고.png]_[Branding].md",
+        "priority": 4,
+        "download_url": "/menu/[3]_[branding portfolio].md/[4]_[farmgelato]_[팜젤로고.png]_[Branding].md",
+        "folder": "[3]_[branding portfolio].md/"
+      },
+      {
+        "type": "file",
+        "name": "[5]_[Lebois]_[leboislogo.png]_[Menu].md",
+        "priority": 5,
+        "download_url": "/menu/[3]_[branding portfolio].md/[5]_[Lebois]_[leboislogo.png]_[Menu].md",
         "folder": "[3]_[branding portfolio].md/"
       },
       {
@@ -56,13 +63,6 @@
         "name": "[]_[육서담]_[fin logo.JPG]_[finstitch].md",
         "priority": 9999,
         "download_url": "/menu/[3]_[branding portfolio].md/[]_[육서담]_[fin logo.JPG]_[finstitch].md",
-        "folder": "[3]_[branding portfolio].md/"
-      },
-      {
-        "type": "file",
-        "name": "[]_[팜젤라또]_[팜젤로고.png]_[description].md",
-        "priority": 9999,
-        "download_url": "/menu/[3]_[branding portfolio].md/[]_[팜젤라또]_[팜젤로고.png]_[description].md",
         "folder": "[3]_[branding portfolio].md/"
       }
     ],
@@ -85,13 +85,6 @@
         "name": "[2]_[documentary film]_[docu.jpg]_[서울 소상공인 장사 다큐멘터리 기획].md",
         "priority": 2,
         "download_url": "/menu/[4]_[projects].md/[2]_[documentary film]_[docu.jpg]_[서울 소상공인 장사 다큐멘터리 기획].md",
-        "folder": "[4]_[projects].md/"
-      },
-      {
-        "type": "file",
-        "name": "[20240505]_[블로그 글 양식]_[test_1.jpg]_[마크다운 양식입니다. 참고하여 블로그 글을 작성해주세요. 각 언어별 하이라이팅도 지원합니다.].md",
-        "priority": 20240505,
-        "download_url": "/menu/[4]_[projects].md/[20240505]_[블로그 글 양식]_[test_1.jpg]_[마크다운 양식입니다. 참고하여 블로그 글을 작성해주세요. 각 언어별 하이라이팅도 지원합니다.].md",
         "folder": "[4]_[projects].md/"
       },
       {
