@@ -1,10 +1,12 @@
 ## Lebois
 
+# 브랜드 스토리 개발 
 # 메뉴판 기획 및 디자인 
 
-<div class="slider h-[600px]">
-
 ![alt text](img/1-2.jpg)
+
+
+<div class="slider h-[600px]">
 
 ![alt text](img/2.jpg)
 
