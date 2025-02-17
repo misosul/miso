@@ -75,16 +75,16 @@
     "children": [
       {
         "type": "file",
-        "name": "[]_[buyeo tapas bar]_[]_[이 파일은 테스트 파일입니다.]_[].md",
-        "priority": 9999,
-        "download_url": "/menu/[4]_[projects].md/[]_[buyeo tapas bar]_[]_[이 파일은 테스트 파일입니다.]_[].md",
+        "name": "[1]_[buyeo tapas bar]_[가을팝업-23.png]_[팝업식당 기획 및 진행].md",
+        "priority": 1,
+        "download_url": "/menu/[4]_[projects].md/[1]_[buyeo tapas bar]_[가을팝업-23.png]_[팝업식당 기획 및 진행].md",
         "folder": "[4]_[projects].md/"
       },
       {
         "type": "file",
-        "name": "[20240120]_[documentary film]_[film]_[].md",
-        "priority": 20240120,
-        "download_url": "/menu/[4]_[projects].md/[20240120]_[documentary film]_[film]_[].md",
+        "name": "[2]_[documentary film]_[docu.jpg]_[서울 소상공인 장사 다큐멘터리 기획].md",
+        "priority": 2,
+        "download_url": "/menu/[4]_[projects].md/[2]_[documentary film]_[docu.jpg]_[서울 소상공인 장사 다큐멘터리 기획].md",
         "folder": "[4]_[projects].md/"
       },
       {
