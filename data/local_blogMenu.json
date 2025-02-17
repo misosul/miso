@@ -13,95 +13,95 @@
   },
   {
     "type": "dir",
-    "name": "branding portfolio",
+    "name": "branding portfolio.md",
     "priority": 3,
     "children": [
       {
         "type": "file",
         "name": "[]_[finstitch]_[fin logo.JPG]_[finstitch].md",
         "priority": 9999,
-        "download_url": "/menu/[3]_[branding portfolio]/[]_[finstitch]_[fin logo.JPG]_[finstitch].md",
-        "folder": "[3]_[branding portfolio]/"
+        "download_url": "/menu/[3]_[branding portfolio].md/[]_[finstitch]_[fin logo.JPG]_[finstitch].md",
+        "folder": "[3]_[branding portfolio].md/"
       },
       {
         "type": "file",
         "name": "[]_[ji studio]_[jihp1.png]_[ji studio].md",
         "priority": 9999,
-        "download_url": "/menu/[3]_[branding portfolio]/[]_[ji studio]_[jihp1.png]_[ji studio].md",
-        "folder": "[3]_[branding portfolio]/"
+        "download_url": "/menu/[3]_[branding portfolio].md/[]_[ji studio]_[jihp1.png]_[ji studio].md",
+        "folder": "[3]_[branding portfolio].md/"
       },
       {
         "type": "file",
         "name": "[]_[lebois]_[fin logo.JPG]_[lebois].md",
         "priority": 9999,
-        "download_url": "/menu/[3]_[branding portfolio]/[]_[lebois]_[fin logo.JPG]_[lebois].md",
-        "folder": "[3]_[branding portfolio]/"
+        "download_url": "/menu/[3]_[branding portfolio].md/[]_[lebois]_[fin logo.JPG]_[lebois].md",
+        "folder": "[3]_[branding portfolio].md/"
       },
       {
         "type": "file",
         "name": "[]_[부여제철소]_[fin logo.JPG]_[1].md",
         "priority": 9999,
-        "download_url": "/menu/[3]_[branding portfolio]/[]_[부여제철소]_[fin logo.JPG]_[1].md",
-        "folder": "[3]_[branding portfolio]/"
+        "download_url": "/menu/[3]_[branding portfolio].md/[]_[부여제철소]_[fin logo.JPG]_[1].md",
+        "folder": "[3]_[branding portfolio].md/"
       },
       {
         "type": "file",
         "name": "[]_[블로그 글 양식]_[test_1.jpg]_[마크다운 양식입니다. 참고하여 블로그 글을 작성해주세요. 각 언어별 하이라이팅도 지원합니다.].md",
         "priority": 9999,
-        "download_url": "/menu/[3]_[branding portfolio]/[]_[블로그 글 양식]_[test_1.jpg]_[마크다운 양식입니다. 참고하여 블로그 글을 작성해주세요. 각 언어별 하이라이팅도 지원합니다.].md",
-        "folder": "[3]_[branding portfolio]/"
+        "download_url": "/menu/[3]_[branding portfolio].md/[]_[블로그 글 양식]_[test_1.jpg]_[마크다운 양식입니다. 참고하여 블로그 글을 작성해주세요. 각 언어별 하이라이팅도 지원합니다.].md",
+        "folder": "[3]_[branding portfolio].md/"
       },
       {
         "type": "file",
         "name": "[]_[육서담]_[fin logo.JPG]_[finstitch].md",
         "priority": 9999,
-        "download_url": "/menu/[3]_[branding portfolio]/[]_[육서담]_[fin logo.JPG]_[finstitch].md",
-        "folder": "[3]_[branding portfolio]/"
+        "download_url": "/menu/[3]_[branding portfolio].md/[]_[육서담]_[fin logo.JPG]_[finstitch].md",
+        "folder": "[3]_[branding portfolio].md/"
       },
       {
         "type": "file",
         "name": "[]_[팜젤라또]_[팜젤로고.png]_[description].md",
         "priority": 9999,
-        "download_url": "/menu/[3]_[branding portfolio]/[]_[팜젤라또]_[팜젤로고.png]_[description].md",
-        "folder": "[3]_[branding portfolio]/"
+        "download_url": "/menu/[3]_[branding portfolio].md/[]_[팜젤라또]_[팜젤로고.png]_[description].md",
+        "folder": "[3]_[branding portfolio].md/"
       }
     ],
-    "download_url": "/menu/[3]_[branding portfolio]"
+    "download_url": "/menu/[3]_[branding portfolio].md"
   },
   {
     "type": "dir",
-    "name": "projects",
+    "name": "projects.md",
     "priority": 4,
     "children": [
       {
         "type": "file",
         "name": "[]_[buyeo tapas bar]_[]_[이 파일은 테스트 파일입니다.]_[].md",
         "priority": 9999,
-        "download_url": "/menu/[4]_[projects]/[]_[buyeo tapas bar]_[]_[이 파일은 테스트 파일입니다.]_[].md",
-        "folder": "[4]_[projects]/"
+        "download_url": "/menu/[4]_[projects].md/[]_[buyeo tapas bar]_[]_[이 파일은 테스트 파일입니다.]_[].md",
+        "folder": "[4]_[projects].md/"
       },
       {
         "type": "file",
         "name": "[20240120]_[documentary film]_[film]_[].md",
         "priority": 20240120,
-        "download_url": "/menu/[4]_[projects]/[20240120]_[documentary film]_[film]_[].md",
-        "folder": "[4]_[projects]/"
+        "download_url": "/menu/[4]_[projects].md/[20240120]_[documentary film]_[film]_[].md",
+        "folder": "[4]_[projects].md/"
       },
       {
         "type": "file",
         "name": "[20240505]_[블로그 글 양식]_[test_1.jpg]_[마크다운 양식입니다. 참고하여 블로그 글을 작성해주세요. 각 언어별 하이라이팅도 지원합니다.].md",
         "priority": 20240505,
-        "download_url": "/menu/[4]_[projects]/[20240505]_[블로그 글 양식]_[test_1.jpg]_[마크다운 양식입니다. 참고하여 블로그 글을 작성해주세요. 각 언어별 하이라이팅도 지원합니다.].md",
-        "folder": "[4]_[projects]/"
+        "download_url": "/menu/[4]_[projects].md/[20240505]_[블로그 글 양식]_[test_1.jpg]_[마크다운 양식입니다. 참고하여 블로그 글을 작성해주세요. 각 언어별 하이라이팅도 지원합니다.].md",
+        "folder": "[4]_[projects].md/"
       },
       {
         "type": "file",
         "name": "[priority]_[title]_[thumnail]_[description].md",
         "priority": null,
-        "download_url": "/menu/[4]_[projects]/[priority]_[title]_[thumnail]_[description].md",
-        "folder": "[4]_[projects]/"
+        "download_url": "/menu/[4]_[projects].md/[priority]_[title]_[thumnail]_[description].md",
+        "folder": "[4]_[projects].md/"
       }
     ],
-    "download_url": "/menu/[4]_[projects]"
+    "download_url": "/menu/[4]_[projects].md"
   }
 ]
