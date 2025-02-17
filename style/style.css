@@ -2,8 +2,8 @@
   --half-mx: 50vw;
   font-family: Pretendard, "Inter";
   font-size: 0.938rem;
-  background-color: rgb(255, 103, 21); /* 배경색 변경 */
-  color: rgb(255, 255, 255); /* 글자색 / 배경색 변경시 글자 색상도 고려해주세요 */
+  background-color: rgb(255, 221, 154); /* 배경색 변경 */
+  color: rgb(0, 0, 0); /* 글자색 / 배경색 변경시 글자 색상도 고려해주세요 */
 }
 
 h6 {
