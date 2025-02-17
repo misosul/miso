@@ -6,7 +6,7 @@
 
 ## 브랜드 네이밍
 
-![alt text](img/finstitchname2.png)
+![alt text](img/finname2.png)
 
 주식회사 원에이티의 미국 B2B 유니폼 티셔츠 시장으로 진출할 글로벌 브랜드<finstitch>를 개발하였습니다.
 
@@ -14,7 +14,7 @@ finstitch는 지속 가능성과 고품질의 가치를 강조하며, 자체 개
 
 ## 브랜드 슬로건과 스토리
 
-![alt text](img/fin slogan.png>)
+![alt text](img/finslogan.png>)
 
 아래와 같은 원에이티만의 우수한 ‘기술’ 을 최우선 가치에 두고 직관적이고 강렬한 영문 슬로건과 스토리를 개발하였습니다. 
 
@@ -26,11 +26,11 @@ finstitch는 지속 가능성과 고품질의 가치를 강조하며, 자체 개
 
 ## 브랜드 로고
 
-![alt text](img/fin logo.JPG>)
-![alt text](img/fin logo1.JPG>)
-![alt text](img/fin logo2.JPG>)
-![alt text](img/fin logo3.JPG>)
-![alt text](img/fin logo4.JPG>)
+![alt text](img/finlogo.JPG>)
+![alt text](img/finlogo1.JPG>)
+![alt text](img/finlogo2.JPG>)
+![alt text](img/finlogo3.JPG>)
+![alt text](img/finlogo4.JPG>)
 
 finstitch 미니멀한 산세리프체를 활용한 로고 디자인의 비쥬얼 포인트 ‘콤마’는 나와 환경, 우리의 이야기를 연결하는 브랜드 메시지를 내포합니다. 자연 친화적 컬러 팔레트를 활용해, 생분해 가능한 원사의 친환경적 본질을 직관적으로 전달합니다. 단순하지만 의미있는 비주얼을 통해 브랜드가 추구하는 지속 가능성과 품질의 조화를 효과적으로 표현했습니다.
 
@@ -38,8 +38,8 @@ finstitch 미니멀한 산세리프체를 활용한 로고 디자인의 비쥬�
 
 ## 제품 컨셉 촬영 
 
-![alt text](img/fin photo.JPG>)
-![alt text](img/fin photo1.JPG>)
+![alt text](img/finphoto.JPG>)
+![alt text](img/finphoto1.JPG>)
 
 
 유니폼 티셔츠에서 중요한 활동성과 튼튼한 내구성을 중심에 두고 제품 스튜디오 촬영과 야외 나들이 컨셉 촬영을 진행했습니다.  유니폼 티셔츠를 사용하는 상황을 상상할 수 있도록, 야외에서 움직임이 편한 활동적인 분위기를 연출하였습니다. 스튜디오 촬영에서는 자세와 구도에 따라 티셔츠 핏과 사이즈감을 자세히 보여줄 수 있도록 촬영과 보정을 진행했습니다.
@@ -48,10 +48,10 @@ finstitch 미니멀한 산세리프체를 활용한 로고 디자인의 비쥬�
 
 ## 제품 브로셔 기획 및 디자인
 
-![alt text](img/fin leaflet.png>)
-![alt text](img/fin leaflet1.png>)
-![alt text](img/fin leaflet2.png>)
-![alt text](img/fin leaflet4.png>)
+![alt text](img/finleaflet.png>)
+![alt text](img/finleaflet1.png>)
+![alt text](img/finleaflet2.png>)
+![alt text](img/finleaflet4.png>)
 
 
 미국 B2B 유니폼 티셔츠 시장으로 진출하기 위해 브랜드의 가치와 제품을 소개할 수 있는 영문 브로셔를 기획하고 디자인했습니다. 
