@@ -13,88 +13,88 @@
   },
   {
     "type": "dir",
-    "name": "branding portfolio.md",
+    "name": "branding portfolio",
     "priority": 3,
     "children": [
       {
         "type": "file",
         "name": "[1]_[finstitch]_[finlogo.JPG]_[Branding].md",
         "priority": 1,
-        "download_url": "/menu/[3]_[branding portfolio].md/[1]_[finstitch]_[finlogo.JPG]_[Branding].md",
-        "folder": "[3]_[branding portfolio].md/"
+        "download_url": "/menu/[3]_[branding portfolio]/[1]_[finstitch]_[finlogo.JPG]_[Branding].md",
+        "folder": "[3]_[branding portfolio]/"
       },
       {
         "type": "file",
         "name": "[2]_[부여제철소]_[부여제철소로고_gr.png]_[Branding].md",
         "priority": 2,
-        "download_url": "/menu/[3]_[branding portfolio].md/[2]_[부여제철소]_[부여제철소로고_gr.png]_[Branding].md",
-        "folder": "[3]_[branding portfolio].md/"
+        "download_url": "/menu/[3]_[branding portfolio]/[2]_[부여제철소]_[부여제철소로고_gr.png]_[Branding].md",
+        "folder": "[3]_[branding portfolio]/"
       },
       {
         "type": "file",
         "name": "[3]_[ji studio]_[jihp1.png]_[Slogan&Story].md",
         "priority": 3,
-        "download_url": "/menu/[3]_[branding portfolio].md/[3]_[ji studio]_[jihp1.png]_[Slogan&Story].md",
-        "folder": "[3]_[branding portfolio].md/"
+        "download_url": "/menu/[3]_[branding portfolio]/[3]_[ji studio]_[jihp1.png]_[Slogan&Story].md",
+        "folder": "[3]_[branding portfolio]/"
       },
       {
         "type": "file",
         "name": "[4]_[farmgelato]_[팜젤로고.png]_[Branding].md",
         "priority": 4,
-        "download_url": "/menu/[3]_[branding portfolio].md/[4]_[farmgelato]_[팜젤로고.png]_[Branding].md",
-        "folder": "[3]_[branding portfolio].md/"
+        "download_url": "/menu/[3]_[branding portfolio]/[4]_[farmgelato]_[팜젤로고.png]_[Branding].md",
+        "folder": "[3]_[branding portfolio]/"
       },
       {
         "type": "file",
-        "name": "[5]_[Lebois]_[leboislogo.png]_[Menu].md",
+        "name": "[5]_[Lebois]_[leboislogo.png]_[Brand Story & Menu Board].md",
         "priority": 5,
-        "download_url": "/menu/[3]_[branding portfolio].md/[5]_[Lebois]_[leboislogo.png]_[Menu].md",
-        "folder": "[3]_[branding portfolio].md/"
+        "download_url": "/menu/[3]_[branding portfolio]/[5]_[Lebois]_[leboislogo.png]_[Brand Story & Menu Board].md",
+        "folder": "[3]_[branding portfolio]/"
       },
       {
         "type": "file",
         "name": "[]_[블로그 글 양식]_[test_1.jpg]_[마크다운 양식입니다. 참고하여 블로그 글을 작성해주세요. 각 언어별 하이라이팅도 지원합니다.].md",
         "priority": 9999,
-        "download_url": "/menu/[3]_[branding portfolio].md/[]_[블로그 글 양식]_[test_1.jpg]_[마크다운 양식입니다. 참고하여 블로그 글을 작성해주세요. 각 언어별 하이라이팅도 지원합니다.].md",
-        "folder": "[3]_[branding portfolio].md/"
+        "download_url": "/menu/[3]_[branding portfolio]/[]_[블로그 글 양식]_[test_1.jpg]_[마크다운 양식입니다. 참고하여 블로그 글을 작성해주세요. 각 언어별 하이라이팅도 지원합니다.].md",
+        "folder": "[3]_[branding portfolio]/"
       },
       {
         "type": "file",
         "name": "[]_[육서담]_[fin logo.JPG]_[finstitch].md",
         "priority": 9999,
-        "download_url": "/menu/[3]_[branding portfolio].md/[]_[육서담]_[fin logo.JPG]_[finstitch].md",
-        "folder": "[3]_[branding portfolio].md/"
+        "download_url": "/menu/[3]_[branding portfolio]/[]_[육서담]_[fin logo.JPG]_[finstitch].md",
+        "folder": "[3]_[branding portfolio]/"
       }
     ],
-    "download_url": "/menu/[3]_[branding portfolio].md"
+    "download_url": "/menu/[3]_[branding portfolio]"
   },
   {
     "type": "dir",
-    "name": "projects.md",
+    "name": "projects",
     "priority": 4,
     "children": [
       {
         "type": "file",
         "name": "[1]_[buyeo tapas bar]_[가을팝업-23.png]_[팝업식당 기획 및 진행].md",
         "priority": 1,
-        "download_url": "/menu/[4]_[projects].md/[1]_[buyeo tapas bar]_[가을팝업-23.png]_[팝업식당 기획 및 진행].md",
-        "folder": "[4]_[projects].md/"
+        "download_url": "/menu/[4]_[projects]/[1]_[buyeo tapas bar]_[가을팝업-23.png]_[팝업식당 기획 및 진행].md",
+        "folder": "[4]_[projects]/"
       },
       {
         "type": "file",
         "name": "[2]_[documentary film]_[docu.jpg]_[서울 소상공인 장사 다큐멘터리 기획].md",
         "priority": 2,
-        "download_url": "/menu/[4]_[projects].md/[2]_[documentary film]_[docu.jpg]_[서울 소상공인 장사 다큐멘터리 기획].md",
-        "folder": "[4]_[projects].md/"
+        "download_url": "/menu/[4]_[projects]/[2]_[documentary film]_[docu.jpg]_[서울 소상공인 장사 다큐멘터리 기획].md",
+        "folder": "[4]_[projects]/"
       },
       {
         "type": "file",
         "name": "[priority]_[title]_[thumnail]_[description].md",
         "priority": null,
-        "download_url": "/menu/[4]_[projects].md/[priority]_[title]_[thumnail]_[description].md",
-        "folder": "[4]_[projects].md/"
+        "download_url": "/menu/[4]_[projects]/[priority]_[title]_[thumnail]_[description].md",
+        "folder": "[4]_[projects]/"
       }
     ],
-    "download_url": "/menu/[4]_[projects].md"
+    "download_url": "/menu/[4]_[projects]"
   }
 ]
