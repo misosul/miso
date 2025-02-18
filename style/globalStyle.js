@@ -54,11 +54,11 @@ const notebookdownloadButtonStyle = `download-button px-5 py-[11px] mb-4 text-sm
 
 // bloglist 목록 스타일
 const bloglistMainContentStyle = `relative mainContent md:h-auto h-screen object-cover object-center overflow-hidden top-0 left-0 aspect-video`;
-const bloglistFirstCardStyle = `h-full bg-white transition duration-200 ease-in-out transform hover:-translate-y-1 flex-col flex-1 cursor-pointer justify-end`;
+const bloglistFirstCardStyle = `h-full transition duration-200 ease-in-out transform hover:-translate-y-1 flex-col flex-1 cursor-pointer justify-end`;
 const bloglistFirstCardImgStyle = `w-full  object-cover object-center overflow-hidden md:h-auto aspect shrink-0 mr-8`;
 const bloglistFirstCardDescriptionStyle = `text-graylv4 text-base font-normal leading-snug md:max-h-40 md:line-clamp-[7] line-clamp-3 mb-3`;
 
-const bloglistCardStyle = `overflow-hidden bg-white transition duration-200 ease-in-out hover:-translate-y-1 cursor-poitner col-span-1 w-auto cursor-pointer`;
+const bloglistCardStyle = `overflow-hidden transition duration-200 ease-in-out hover:-translate-y-1 cursor-poitner col-span-1 w-auto cursor-pointer`;
 const bloglistCardImgStyle = `w-full aspect-square object-cover object-center overflow-hidden`;
 
 const bloglistCardBodyStyle = `h-full w-full opacity-100 duration-300 bottom-0`;

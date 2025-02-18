@@ -4,17 +4,14 @@
 
 menu 폴더 안에는 .md 파일 혹은 폴더만 생성 가능합니다.
 
-
 .md 파일의 제목은 `[priority]_[title]_[thumnail]_[description].md` 형식으로 작성해야 합니다.
 
 ## SNS 관리
 
 sns 설정
-
 sns 추가시 {text : "" , link : ""} <--- 여기를 복사해 [{},{},{}] 이런식의 구조가 되도록 아래 붙여넣어주세요
 
 ## 블로그 작성
-
 
 1. 글은 menu 폴더에 작성하며, `[priority]_[title]_[thumnail]_[description].md` 형식으로 작성합니다.
 2. 썸네일을 사용하지 않는 경우, `[priority]_[title]_[]_[description].md` 형식으로 작성합니다.
@@ -80,10 +77,10 @@ style 폴더안에 style.css 파일을 열어주세요.
 
 ```
 
-<span style="color:색상코드입력">원하는 글 작성</span> 
+<span style="color:색상코드입력">원하는 글 작성</span>
 ```
-*html컬러차트 cmyk to hex 코드로 
 
+\*html컬러차트 cmyk to hex 코드로
 
 # 이미지 설명
 
@@ -92,7 +89,6 @@ style 폴더안에 style.css 파일을 열어주세요.
 ```
 ###### 원하는 설명 넣기
 ```
-
 
 # 개발사항이 변경됐을 때
 
@@ -105,20 +101,18 @@ style 폴더안에 style.css 파일을 열어주세요.
 
 https://taedonn.tistory.com/22
 
-
 # 글자 스타일
 
 - ###### NO.37 / 2025.01.15. 09:00•essay
 
 # 영상 코드
 
-
 <video controls>
   <source src="https://drive.google.com/uc?export=download&id=18xxyOnEWpTeaSMzXND8t2y1g0xrPvTdm" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
-# 이미지 롤링 코드 
+# 이미지 롤링 코드
 
 <div class="slider h-[600px]">
 
@@ -133,7 +127,6 @@ https://taedonn.tistory.com/22
 ![alt text](https://picsum.photos/id/1055/600/400)
 
 </div>
-
 
 <div class="gallery4">
 
@@ -152,5 +145,5 @@ https://taedonn.tistory.com/22
 ![alt text](img/image.png)
 
 ![alt text](img/image.png)
-</div>
 
+</div>
