@@ -4,12 +4,13 @@
 
 <div class="slider h-[600px]">
 
-![alt text](img/부여제철소로고gr.png)
+![alt text](img/부여제철소정사각형로고g.png)
 
-![alt text](img/부여제철소로고white.png)
+![alt text](img/부여제철소정사각형로고w.png)
 
 
 </div>
+
 
 ![alt text](img/부여제철소1.png)
 ![alt text](img/부여제철소2.png)

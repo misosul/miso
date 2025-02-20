@@ -1,4 +1,4 @@
-# ji studio
+# ji studio 라이프스타일 가구 브랜드
 
 
 ## 브랜드 분석 및 핵심가치 도출
@@ -22,8 +22,6 @@
 
 <div class="slider h-[600px]">
 
-![alt text](img/jihp.png)
-
 ![alt text](img/jihp1.png)
 
 ![alt text](img/jihp2.png)
@@ -33,9 +31,9 @@
 
 <br/>
 
---------------------------
 
-# Branding Development
+
+# Branding Development Process
 
 <div class="slider h-[600px]">
 
