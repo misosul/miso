@@ -24,11 +24,11 @@ ji studio 는 다이닝 테이블 상품을 중심으로 대표 라이프스타�
 
 <div class="slider h-[600px]">
 
-![alt text](img/ji001.png)
+![alt text](img/ji.001.png)
 
-![alt text](img/ji002.png)
+![alt text](img/ji.002.png)
 
-![alt text](img/ji003.png)
+![alt text](img/ji.003.png)
 
 </div>
 
@@ -36,16 +36,17 @@ ji studio 는 다이닝 테이블 상품을 중심으로 대표 라이프스타�
 <br/>
 
 
-
 # Product Naming
+
+ji studio 테이블 구성요소 중 가장 차별화 된 Base (하부 프레임)의 조형과 형태에 기반하여 다이닝 테이블 상품명과 컬러명을 개발하였습니다.
 
 <div class="slider h-[600px]">
 
-![alt text](img/jidevelop2.png)
+![alt text](img/ji1.001.png)
 
-![alt text](img/jidevelop1.png)
+![alt text](img/ji1.002png)
 
-![alt text](img/jidevelop.png)
+![alt text](img/ji1.003.png)
 
 </div>
 
