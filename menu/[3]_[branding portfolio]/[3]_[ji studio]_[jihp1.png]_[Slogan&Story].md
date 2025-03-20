@@ -44,7 +44,7 @@ ji studio 테이블 구성요소 중 가장 차별화 된 Base (하부 프레임
 
 ![alt text](img/ji.004.png)
 
-![alt text](img/ji.005png)
+![alt text](img/ji.005.png)
 
 ![alt text](img/ji.006.png)
 
